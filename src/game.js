@@ -8,12 +8,11 @@ export function createBoard(container, size = 4) {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.dataset.index = String(i);
-    grid.appendChild(cell);
+    grid.append(cell);
     cells.push(cell);
   }
 
-  container.appendChild(grid);
-
+  container.append(grid);
   return { grid, cells };
 }
 
